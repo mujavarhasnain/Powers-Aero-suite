@@ -1,0 +1,15 @@
+@use '@angular/material' as mat;
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '@angular/material/theming';
+@include mat-core();
+$primary-them: ( 50: #fef0e1, 100: #fcd8b5, 200: #fbbf84, 300: #f9a553, 400: #f7912e, 500: #f67e09, 600: #f57608, 700: #f36b06, 800: #f26105, 900: #ef4e02, A100: #ffffff, A200: #ffeae3, A400: #ffc5b0, A700: #ffb296, contrast: ( 50: #ffffff, 100: #ffffff, 200: #ffffff, 300: #ffffff, 400: #ffffff, 500: #ffffff, 600: #ffffff, 700: #ffffff, 800: #ffffff, 900: #ffffff, A100: #ffffff, A200: #ffffff, A400: #ffffff, A700: #ffffff, ));
+
+/* For use in src/lib/core/theming/_palette.scss */
+
+$accent-them: ( 50: #f0f0f0, 100: #dadada, 200: #c1c1c1, 300: #a8a8a8, 400: #969696, 500: #838383, 600: #7b7b7b, 700: #707070, 800: #666666, 900: #535353, A100: #f9c5c5, A200: #f39797, A400: #ff5858, A700: #ff3f3f, contrast: ( 50: #000000, 100: #000000, 200: #000000, 300: #000000, 400: #000000, 500: #000000, 600: #ffffff, 700: #ffffff, 800: #ffffff, 900: #ffffff, A100: #000000, A200: #000000, A400: #000000, A700: #ffffff, ));
+$warn-them: ( 50: #f7e4e4, 100: #ecbdbd, 200: #df9191, 300: #d26464, 400: #c94343, 500: #bf2222, 600: #b91e1e, 700: #b11919, 800: #a91414, 900: #9b0c0c, A100: #ffc9c9, A200: #ff9696, A400: #ff6363, A700: #ff4a4a, contrast: ( 50: #000000, 100: #000000, 200: #000000, 300: #000000, 400: #ffffff, 500: #ffffff, 600: #ffffff, 700: #ffffff, 800: #ffffff, 900: #ffffff, A100: #000000, A200: #000000, A400: #000000, A700: #000000, ));
+$primary: mat.define-palette($primary-them);
+$accent: mat.define-palette($accent-them);
+$warn: mat.define-palette($warn-them);
+$theme: mat.define-light-theme($primary, $accent);
+@include mat.all-component-themes($theme);

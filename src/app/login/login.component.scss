@@ -1,0 +1,75 @@
+ .main-login-container {
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     background-image: linear-gradient(45deg, #000000e0, transparent), url('../../assets/img/login-banner.png');
+     background-size: cover;
+     padding: 50px 0;
+     .login-form-container {
+         padding: 30px;
+         border-radius: 14px;
+         background-color: #ffffff;
+         box-shadow: 0px 20px 17px #06060657;
+     }
+     .login-btn {
+         width: 100%;
+     }
+     .login-in-logo {
+         text-align: center;
+         margin-bottom: 32px;
+         img {
+             height: 50px;
+         }
+     }
+     .login-title {
+         text-align: center;
+         display: block;
+         font-size: 18px;
+         margin-bottom: 10px;
+     }
+     p.login-description {
+         text-align: center;
+         margin-bottom: 32px;
+         font-size: 14px;
+         color: #b8610c;
+     }
+     .login-content {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         color: wheat;
+         h1 {
+             font-size: 44px;
+             line-height: 1.2;
+             font-weight: bolder;
+             color: #fffef9;
+         }
+         h3 {
+             font-size: 24px;
+         }
+     }
+     .login-other-container {
+         text-align: center;
+         margin-top: 30px;
+         label {
+             margin-bottom: 10px;
+             display: block;
+         }
+         .login-other-inner-container button {
+             padding: 9px !important;
+             margin: 0 3px;
+             img {
+                 height: 30px;
+                 width: 30px;
+                 border-radius: 100%;
+                 background-color: #f9f7f7;
+             }
+         }
+     }
+ }
+ 
+ @media screen and (max-width: 990px) {
+     .login-content {
+         display: none !important;
+     }
+ }

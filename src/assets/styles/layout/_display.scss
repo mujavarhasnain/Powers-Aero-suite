@@ -1,0 +1,41 @@
+.c-d-none {
+    display: none;
+}
+
+.c-d-inline {
+    display: inline !important;
+}
+
+.c-d-inline-block {
+    display: inline-block !important;
+}
+
+.c-d-block {
+    display: block !important;
+}
+
+.c-d-table {
+    display: table !important;
+}
+
+.c-d-table-row {
+    display: table-row !important;
+}
+
+.c-d-table-cell {
+    display: table-cell !important;
+}
+
+.c-d-flex {
+    display: flex !important;
+}
+
+.c-d-inline-flex {
+    display: inline-flex !important;
+}
+
+.hide-xs {
+    @media (max-width: 575px) {
+        display: none;
+    }
+}

@@ -1,0 +1,169 @@
+.admin-main-container {
+    height: 100vh;
+    display: flex;
+    padding-left: 220px;
+    transition: all 300ms;
+}
+
+.admin-body-container {
+    width: 100%;
+    overflow: auto;
+}
+
+app-side-bar {
+    display: block;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #fdfbfa;
+    box-shadow: 0px 0px 6px #8f511429;
+    transition: all 300ms;
+    z-index: 100;
+    //overflow: auto;
+    //padding-bottom: 50px;
+}
+
+::ng-deep.collapseSideBar {
+    app-side-bar {
+        width: 70px !important;
+        .video-popover-btn {
+            display: none;
+        }
+        &:hover {
+            width: 250px !important;
+        }
+        &:hover button {
+            .span-text {
+                display: inline !important;
+            }
+        }
+        &:hover .user-details {
+            display: flex !important;
+        }
+        .user-details {
+            display: none;
+        }
+        button {
+            .span-text {
+                display: none;
+            }
+        }
+        .admin-logo {
+            margin: 0 17px;
+            overflow: hidden;
+        }
+    }
+    &.admin-main-container {
+        padding-left: 70px;
+    }
+    .collapse-menu-content {
+        display: none;
+    }
+    app-side-bar:hover .collapse-menu-content {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .admin-main-container {
+        padding-left: 0px !important;
+    }
+    app-side-bar {
+        display: block;
+        width: 250px;
+        position: fixed;
+        top: 60px !important;
+        left: -250px;
+        bottom: 0;
+        background: white;
+        box-shadow: 3px 0px 14px #9600dd1c;
+        transition: all 300ms;
+        z-index: 1000;
+    }
+     ::ng-deep.collapseSideBar {
+        .collapse-menu-content {
+            display: block !important;
+        }
+        app-side-bar {
+            width: 250px !important;
+            left: 0px !important;
+            .user-details {
+                display: flex !important;
+            }
+            button {
+                .span-text {
+                    display: inline !important;
+                }
+            }
+        }
+        &.admin-main-container {
+            padding-left: 0px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 769px) {
+     ::ng-deep.left-bar-show-1440 {
+        &.admin-main-container {
+            padding-left: 70px;
+        }
+        app-side-bar {
+            width: 70px !important;
+            .video-popover-btn {
+                display: none;
+            }
+            &:hover {
+                width: 250px !important;
+            }
+            &:hover button {
+                .span-text {
+                    display: inline !important;
+                }
+            }
+            button {
+                .span-text {
+                    display: none;
+                }
+            }
+            .admin-logo {
+                margin: 0 17px;
+                overflow: hidden;
+            }
+        }
+        &.admin-main-container {
+            padding-left: 70px;
+        }
+        .collapse-menu-content {
+            display: none;
+        }
+        app-side-bar:hover .collapse-menu-content {
+            display: block;
+        }
+    }
+     ::ng-deep.collapseSideBar {
+        app-side-bar {
+            width: 250px !important;
+            &:hover {
+                width: 250px !important;
+            }
+            &:hover button {
+                .span-text {
+                    display: inline !important;
+                }
+            }
+            button {
+                .span-text {
+                    display: inline !important;
+                }
+            }
+        }
+        &.admin-main-container {
+            padding-left: 250px !important;
+        }
+        .collapse-menu-content {
+            display: block !important;
+        }
+    }
+}

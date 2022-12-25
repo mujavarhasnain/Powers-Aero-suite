@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'assets/styles/layout/reset.scss';
+// Layout
+@import 'assets/styles/layout/display.scss';
+@import 'assets/styles/layout/flex.scss';
+@import 'assets/styles/layout/sizing.scss';
+@import 'assets/styles/layout/spacing.scss';
+@import 'assets/styles/layout/grid.scss';
+@import 'assets/styles/layout/text.scss';
+@import 'assets/styles/layout/positions.scss';
+@import 'assets/styles/layout/button';
+@import 'assets/styles/layout/form-control';
+@import 'assets/styles/layout/variables';
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

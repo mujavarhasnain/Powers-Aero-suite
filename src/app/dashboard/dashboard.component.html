@@ -1,0 +1,39 @@
+<div class="c-p-3">
+    <h2 class="page-titel">Dashboard</h2>
+    <div class="c-row">
+        <div class="c-col-xl-6 c-col-lg-6 c-col-md-6 c-col-xs-12 col-sm-12 c-mb-3">
+            <mat-card class="mat-elevation-z3 c-p-3">
+                <canvas baseChart height="250" [type]="'line'" [data]="lineChartData" [options]="lineChartOptions" [legend]="lineChartLegend">
+                </canvas>
+            </mat-card>
+        </div>
+
+        <div class="c-col-xl-6 c-col-lg-6 c-col-md-6 c-col-xs-12 col-sm-12 c-mb-3">
+            <mat-card class="mat-elevation-z3 c-p-3">
+                <canvas baseChart height="250" [data]="barChartData" [options]="barChartOptions" [plugins]="barChartPlugins" [legend]="barChartLegend" [type]="'bar'">
+                </canvas>
+            </mat-card>
+        </div>
+
+        <div class="c-col-xl-3 c-col-lg-3 c-col-md-6 c-col-xs-12 col-sm-12 c-mb-3">
+            <mat-card class="mat-elevation-z3 c-p-3">
+                <canvas baseChart height="250" [datasets]="radarChartDatasets" [options]="radarChartOptions" [labels]="radarChartLabels" [type]="'radar'">
+                </canvas>
+            </mat-card>
+        </div>
+
+        <div class="c-col-xl-3 c-col-lg-3 c-col-md-6 c-col-xs-12 col-sm-12 c-mb-3">
+            <mat-card class="mat-elevation-z3 c-p-3">
+                <canvas baseChart [labels]="doughnutChartLabels" [datasets]="doughnutChartDatasets" height="250" [options]="doughnutChartOptions" [legend]="true" [type]="'doughnut'">
+                </canvas>
+            </mat-card>
+        </div>
+
+        <div class="c-col-xl-6 c-col-lg-6 c-col-md-6 c-col-xs-12 col-sm-12 c-mb-3">
+            <mat-card class="mat-elevation-z3 c-p-3">
+                <canvas height="250" baseChart [datasets]="bubbleChartDatasets" [options]="bubbleChartOptions" [legend]="bubbleChartLegend" [type]="'bubble'">
+                </canvas>
+            </mat-card>
+        </div>
+    </div>
+</div>

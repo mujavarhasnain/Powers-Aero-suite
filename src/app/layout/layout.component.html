@@ -1,0 +1,8 @@
+<div class="admin-main-container left-bar-show-1440" [ngClass]="{'collapseSideBar':toggleMenuSideBar}">
+  <app-side-bar></app-side-bar>
+
+  <div class="admin-body-container">
+    <app-header (sideBarToggle)="toggleSideBarEvent($event)"></app-header>
+    <router-outlet></router-outlet>
+  </div>
+</div>

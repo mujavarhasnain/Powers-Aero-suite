@@ -1,0 +1,52 @@
+:host {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 6px rgb(246 126 9 / 15%);
+    background-color: white;
+    position: sticky;
+    z-index: 9;
+    top: 0;
+}
+
+button.notification-btn {
+    margin: -10px 0px -10px -15px;
+    height: 66px;
+    width: 66px;
+    border: unset;
+    border-right: 1px solid gainsboro;
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+    color: #6F66B1;
+    transition: 500ms all;
+    &.active,
+    &:hover {
+        background-color: #6F66B1;
+        color: white !important;
+    }
+}
+
+.notification-active:before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: red;
+    position: absolute;
+    border-radius: 100%;
+    right: 17px;
+}
+
+.profile-button {
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        padding: 2px;
+        border: 1px solid #f67e09;
+    }
+}
